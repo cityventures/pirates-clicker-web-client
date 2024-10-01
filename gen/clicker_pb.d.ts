@@ -11,6 +11,68 @@ import type { Message } from "@bufbuild/protobuf";
 export declare const file_clicker: GenFile;
 
 /**
+ * @generated from message clicker.CheckPromoRoomAccessRequest
+ */
+export declare type CheckPromoRoomAccessRequest = Message<"clicker.CheckPromoRoomAccessRequest"> & {
+  /**
+   * @generated from field: string req_data = 1;
+   */
+  reqData: string;
+
+  /**
+   * @generated from field: int64 id = 2;
+   */
+  id: bigint;
+};
+
+/**
+ * JSON type for the message clicker.CheckPromoRoomAccessRequest.
+ */
+export declare type CheckPromoRoomAccessRequestJson = {
+  /**
+   * @generated from field: string req_data = 1;
+   */
+  reqData?: string;
+
+  /**
+   * @generated from field: int64 id = 2;
+   */
+  id?: string;
+};
+
+/**
+ * Describes the message clicker.CheckPromoRoomAccessRequest.
+ * Use `create(CheckPromoRoomAccessRequestSchema)` to create a new message.
+ */
+export declare const CheckPromoRoomAccessRequestSchema: GenMessage<CheckPromoRoomAccessRequest, CheckPromoRoomAccessRequestJson>;
+
+/**
+ * @generated from message clicker.CheckPromoRoomAccessResponse
+ */
+export declare type CheckPromoRoomAccessResponse = Message<"clicker.CheckPromoRoomAccessResponse"> & {
+  /**
+   * @generated from field: bool has_access = 1;
+   */
+  hasAccess: boolean;
+};
+
+/**
+ * JSON type for the message clicker.CheckPromoRoomAccessResponse.
+ */
+export declare type CheckPromoRoomAccessResponseJson = {
+  /**
+   * @generated from field: bool has_access = 1;
+   */
+  hasAccess?: boolean;
+};
+
+/**
+ * Describes the message clicker.CheckPromoRoomAccessResponse.
+ * Use `create(CheckPromoRoomAccessResponseSchema)` to create a new message.
+ */
+export declare const CheckPromoRoomAccessResponseSchema: GenMessage<CheckPromoRoomAccessResponse, CheckPromoRoomAccessResponseJson>;
+
+/**
  * @generated from message clicker.LookupRoomRequest
  */
 export declare type LookupRoomRequest = Message<"clicker.LookupRoomRequest"> & {
@@ -1859,6 +1921,14 @@ export declare const API: GenService<{
     methodKind: "unary";
     input: typeof PromoRoomsRequestSchema;
     output: typeof RoomsResponseSchema;
+  },
+  /**
+   * @generated from rpc clicker.API.CheckPromoRoomAccess
+   */
+  checkPromoRoomAccess: {
+    methodKind: "unary";
+    input: typeof CheckPromoRoomAccessRequestSchema;
+    output: typeof CheckPromoRoomAccessResponseSchema;
   },
   /**
    * @generated from rpc clicker.API.BoostHourInvoice
