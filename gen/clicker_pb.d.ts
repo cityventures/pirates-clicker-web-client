@@ -125,6 +125,11 @@ export declare type RoomResponse = Message<"clicker.RoomResponse"> & {
    * @generated from field: clicker.RoomVariant variant = 5;
    */
   variant: RoomVariant;
+
+  /**
+   * @generated from field: repeated clicker.CustomReward custom_rewards = 6;
+   */
+  customRewards: CustomReward[];
 };
 
 /**
@@ -155,6 +160,11 @@ export declare type RoomResponseJson = {
    * @generated from field: clicker.RoomVariant variant = 5;
    */
   variant?: RoomVariantJson;
+
+  /**
+   * @generated from field: repeated clicker.CustomReward custom_rewards = 6;
+   */
+  customRewards?: CustomRewardJson[];
 };
 
 /**
@@ -162,6 +172,42 @@ export declare type RoomResponseJson = {
  * Use `create(RoomResponseSchema)` to create a new message.
  */
 export declare const RoomResponseSchema: GenMessage<RoomResponse, RoomResponseJson>;
+
+/**
+ * @generated from message clicker.CustomReward
+ */
+export declare type CustomReward = Message<"clicker.CustomReward"> & {
+  /**
+   * @generated from field: clicker.RewardVariant variant = 1;
+   */
+  variant: RewardVariant;
+
+  /**
+   * @generated from field: double amount = 2;
+   */
+  amount: number;
+};
+
+/**
+ * JSON type for the message clicker.CustomReward.
+ */
+export declare type CustomRewardJson = {
+  /**
+   * @generated from field: clicker.RewardVariant variant = 1;
+   */
+  variant?: RewardVariantJson;
+
+  /**
+   * @generated from field: double amount = 2;
+   */
+  amount?: number | "NaN" | "Infinity" | "-Infinity";
+};
+
+/**
+ * Describes the message clicker.CustomReward.
+ * Use `create(CustomRewardSchema)` to create a new message.
+ */
+export declare const CustomRewardSchema: GenMessage<CustomReward, CustomRewardJson>;
 
 /**
  * @generated from message clicker.IslandInvoiceRequest
@@ -1635,9 +1681,9 @@ export declare type RoomUpdate = Message<"clicker.RoomUpdate"> & {
   states: { [key: number]: HouseState };
 
   /**
-   * @generated from field: map<int32, clicker.NextReward> next_rewards = 6;
+   * @generated from field: map<int32, clicker.RewardVariant> next_rewards = 6;
    */
-  nextRewards: { [key: number]: NextReward };
+  nextRewards: { [key: number]: RewardVariant };
 };
 
 /**
@@ -1670,9 +1716,9 @@ export declare type RoomUpdateJson = {
   states?: { [key: number]: HouseStateJson };
 
   /**
-   * @generated from field: map<int32, clicker.NextReward> next_rewards = 6;
+   * @generated from field: map<int32, clicker.RewardVariant> next_rewards = 6;
    */
-  nextRewards?: { [key: number]: NextRewardJson };
+  nextRewards?: { [key: number]: RewardVariantJson };
 };
 
 /**
@@ -1707,9 +1753,9 @@ export declare type RoomVariantJson = "User" | "Promo";
 export declare const RoomVariantSchema: GenEnum<RoomVariant, RoomVariantJson>;
 
 /**
- * @generated from enum clicker.NextReward
+ * @generated from enum clicker.RewardVariant
  */
-export enum NextReward {
+export enum RewardVariant {
   /**
    * @generated from enum value: None = 0;
    */
@@ -1742,14 +1788,14 @@ export enum NextReward {
 }
 
 /**
- * JSON type for the enum clicker.NextReward.
+ * JSON type for the enum clicker.RewardVariant.
  */
-export declare type NextRewardJson = "None" | "Cheese" | "Bone" | "USDT" | "TON" | "GEM";
+export declare type RewardVariantJson = "None" | "Cheese" | "Bone" | "USDT" | "TON" | "GEM";
 
 /**
- * Describes the enum clicker.NextReward.
+ * Describes the enum clicker.RewardVariant.
  */
-export declare const NextRewardSchema: GenEnum<NextReward, NextRewardJson>;
+export declare const RewardVariantSchema: GenEnum<RewardVariant, RewardVariantJson>;
 
 /**
  * @generated from enum clicker.HouseState
