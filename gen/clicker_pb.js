@@ -8,266 +8,280 @@ import { enumDesc, fileDesc, messageDesc, serviceDesc, tsEnum } from "@bufbuild/
  * Describes the file clicker.proto.
  */
 export const file_clicker = /*@__PURE__*/
-  fileDesc("Cg1jbGlja2VyLnByb3RvEgdjbGlja2VyIjsKG0NoZWNrUHJvbW9Sb29tQWNjZXNzUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCRIKCgJpZBgCIAEoAyIyChxDaGVja1Byb21vUm9vbUFjY2Vzc1Jlc3BvbnNlEhIKCmhhc19hY2Nlc3MYASABKAgiOgoRTG9va3VwUm9vbVJlcXVlc3QSDgoEc2x1ZxgBIAEoCUgAEgwKAmlkGAIgASgDSABCBwoFZmllbGQiEwoRUHJvbW9Sb29tc1JlcXVlc3QiNQoNUm9vbXNSZXNwb25zZRIkCgVyb29tcxgBIAMoCzIVLmNsaWNrZXIuUm9vbVJlc3BvbnNlIqABCgxSb29tUmVzcG9uc2USCgoCaWQYASABKAMSDAoEbmFtZRgCIAEoCRIQCgh1c2VybmFtZRgDIAEoCRIOCgZvbmxpbmUYBCABKAMSJQoHdmFyaWFudBgFIAEoDjIULmNsaWNrZXIuUm9vbVZhcmlhbnQSLQoOY3VzdG9tX3Jld2FyZHMYBiADKAsyFS5jbGlja2VyLkN1c3RvbVJld2FyZCJHCgxDdXN0b21SZXdhcmQSJwoHdmFyaWFudBgBIAEoDjIWLmNsaWNrZXIuUmV3YXJkVmFyaWFudBIOCgZhbW91bnQYAiABKAEiOQoUSXNsYW5kSW52b2ljZVJlcXVlc3QSEAoIcmVxX2RhdGEYASABKAkSDwoHcm9vbV9pZBgCIAEoBCJHChJTcG90SW52b2ljZVJlcXVlc3QSEAoIcmVxX2RhdGEYASABKAkSDgoGYW1vdW50GAIgASgDEg8KB3Jvb21faWQYAyABKAQiIgoOSW52b2ljZVJlcXVlc3QSEAoIcmVxX2RhdGEYASABKAkiHwoPSW52b2ljZVJlc3BvbnNlEgwKBGxpbmsYASABKAkiHQoJTWVSZXF1ZXN0EhAKCHJlcV9kYXRhGAEgASgJItYBCgpNZVJlc3BvbnNlEjMKCGJhbGFuY2VzGAEgAygLMiEuY2xpY2tlci5NZVJlc3BvbnNlLkJhbGFuY2VzRW50cnkSDQoFbGV2ZWwYAiABKAUSGQoRY2xpY2tzX3Blcl9zZWNvbmQYAyABKAUSDAoEcmVmcxgEIAEoBRITCgtib29zdF91bnRpbBgFIAEoAxIVCg1pc2xhbmRfYWN0aXZlGAcgASgIGi8KDUJhbGFuY2VzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgBOgI4ASLAAQoHUmVxdWVzdBIdCgRqb2luGAEgASgLMg0uY2xpY2tlci5Kb2luSAASHwoFY2xpY2sYAiABKAsyDi5jbGlja2VyLkNsaWNrSAASKwoLc2V0Q2l0eU5hbWUYAyABKAsyFC5jbGlja2VyLlNldENpdHlOYW1lSAASIQoGZ2V0VG9wGAQgASgLMg8uY2xpY2tlci5HZXRUb3BIABIdCgRwaW5nGAUgASgLMg0uY2xpY2tlci5QaW5nSABCBgoEZGF0YSJOCgRKb2luEhUKDXRlbGVncmFtX2RhdGEYASABKAkSDwoHcm9vbV9pZBgCIAEoAxITCgZyZWZfaWQYAyABKANIAIgBAUIJCgdfcmVmX2lkIj0KBUNsaWNrEgkKAXgYASABKAUSCQoBeRgCIAEoBRIOCgZwYWdlX3gYAyABKAESDgoGcGFnZV95GAQgASgBIjcKC1NldENpdHlOYW1lEhEKCWNpdHlfbmFtZRgBIAEoCRIVCg1jaXR5X3VzZXJuYW1lGAIgASgJIggKBkdldFRvcCIGCgRQaW5nIpIECghSZXNwb25zZRIKCgJpZBgBIAEoBBIhCgZyZXdhcmQYAiABKAsyDy5jbGlja2VyLlJld2FyZEgAEisKC2NsYWltUmV3YXJkGAMgASgLMhQuY2xpY2tlci5DbGFpbVJld2FyZEgAEi8KDXN0YXJ0Q2xhaW1pbmcYBCABKAsyFi5jbGlja2VyLlN0YXJ0Q2xhaW1pbmdIABIpCgp1c2VySm9pbmVkGAUgASgLMhMuY2xpY2tlci5Vc2VySm9pbmVkSAASKgoLam9pbl9mYWlsZWQYBiABKAsyEy5jbGlja2VyLkpvaW5GYWlsZWRIABIlCgh1c2VyTGVmdBgHIAEoCzIRLmNsaWNrZXIuVXNlckxlZnRIABIrCgtjaXR5TmFtZVNldBgIIAEoCzIULmNsaWNrZXIuQ2l0eU5hbWVTZXRIABIbCgN0b3AYCSABKAsyDC5jbGlja2VyLlRvcEgAEisKC3RvdGFsT25saW5lGAogASgLMhQuY2xpY2tlci5Ub3RhbE9ubGluZUgAEikKCnJvb21VcGRhdGUYCyABKAsyEy5jbGlja2VyLlJvb21VcGRhdGVIABIdCgRraWNrGAwgASgLMg0uY2xpY2tlci5LaWNrSAASMgoPYm9vc3RfYWN0aXZhdGVkGA0gASgLMhcuY2xpY2tlci5Cb29zdEFjdGl2YXRlZEgAQgYKBGRhdGEiMAoOQm9vc3RBY3RpdmF0ZWQSDwoHdXNlcl9pZBgBIAEoAxINCgV1bnRpbBgCIAEoAyIWCgRLaWNrEg4KBnJlYXNvbhgBIAEoCSKiAQoGUmV3YXJkEg8KB3VzZXJfaWQYASABKAMSEAoIdXNlcm5hbWUYAiABKAkSDgoGYW1vdW50GAMgASgDEhQKDHRvdGFsX2Ftb3VudBgEIAEoAxIZChF0b3RhbF9yb29tX2Ftb3VudBgFIAEoAxIJCgF4GAYgASgFEgkKAXkYByABKAUSDgoGcGFnZV94GAggASgBEg4KBnBhZ2VfeRgJIAEoASKLAQoLQ2xhaW1SZXdhcmQSDwoHdXNlcl9pZBgBIAEoAxIQCgh1c2VybmFtZRgCIAEoCRIjCgZyZXdhcmQYAyABKAsyEy5jbGlja2VyLlJld2FyZFR5cGUSCQoBeBgEIAEoBRIJCgF5GAUgASgFEg4KBnBhZ2VfeBgGIAEoARIOCgZwYWdlX3kYByABKAEiXAoKUmV3YXJkVHlwZRIPCgd2YXJpYW50GAEgASgJEg4KBmFtb3VudBgCIAEoARIfCgZyYXJpdHkYAyABKAsyDy5jbGlja2VyLlJhcml0eRIMCgRkZWVwGAQgASgDIiIKBlJhcml0eRIMCgRmcm9tGAEgASgDEgoKAnRvGAIgASgDIlYKDVN0YXJ0Q2xhaW1pbmcSDwoHdXNlcl9pZBgBIAEoAxIQCgh1c2VybmFtZRgCIAEoCRIJCgF4GAMgASgFEgkKAXkYBCABKAUSDAoEdGltZRgFIAEoBCJaCgpVc2VySm9pbmVkEg8KB3VzZXJfaWQYASABKAMSEAoIdXNlcm5hbWUYAiABKAkSFAoMdG90YWxfYW1vdW50GAMgASgDEhMKC2Jvb3N0X3VudGlsGAQgASgDIqwBCgpKb2luRmFpbGVkEg8KB3VzZXJfaWQYASABKAMSDgoGcmVhc29uGAIgASgJEjAKCGluYWN0aXZlGAMgASgLMhwuY2xpY2tlci5Kb2luRmFpbGVkX0luYWN0aXZlSAASQAoRbXVzdF9qb2luX2NoYW5uZWwYBCABKAsyIy5jbGlja2VyLkpvaW5GYWlsZWRfTXVzdEpvaW5DaGFubmVsSABCCQoHZGV0YWlscyIuChNKb2luRmFpbGVkX0luYWN0aXZlEhcKD3VzZXJzX3RvX2ludml0ZRgBIAEoBSJDChpKb2luRmFpbGVkX011c3RKb2luQ2hhbm5lbBISCgpjaGFubmVsX2lkGAEgASgDEhEKCWpvaW5fbGluaxgCIAEoCSJDCghVc2VyTGVmdBIPCgd1c2VyX2lkGAEgASgDEhAKCHVzZXJuYW1lGAIgASgJEhQKDHRvdGFsX29ubGluZRgDIAEoAyI3CgtDaXR5TmFtZVNldBIRCgljaXR5X25hbWUYASABKAkSFQoNY2l0eV91c2VybmFtZRgCIAEoCSI3CgNUb3ASDwoHdXNlcl9pZBgBIAEoAxIfCgVyb29tcxgCIAMoCzIQLmNsaWNrZXIuVG9wUm9vbSJZCgdUb3BSb29tEg8KB3Jvb21faWQYASABKAMSEQoJcm9vbV9uYW1lGAIgASgJEhQKDHRvdGFsX2Ftb3VudBgDIAEoAxIUCgx0b3RhbF9vbmxpbmUYBCABKAMiIwoLVG90YWxPbmxpbmUSFAoMdG90YWxfb25saW5lGAEgASgDIswDCgpSb29tVXBkYXRlEhQKDHRvdGFsX29ubGluZRgBIAEoAxIZChF0b3RhbF9yb29tX2Ftb3VudBgCIAEoAxIXCg90b3RhbF9hdmFpbGFibGUYAyABKAMSQAoPY2xhaW1pbmdfaG91c2VzGAQgAygLMicuY2xpY2tlci5Sb29tVXBkYXRlLkNsYWltaW5nSG91c2VzRW50cnkSLwoGc3RhdGVzGAUgAygLMh8uY2xpY2tlci5Sb29tVXBkYXRlLlN0YXRlc0VudHJ5EjoKDG5leHRfcmV3YXJkcxgGIAMoCzIkLmNsaWNrZXIuUm9vbVVwZGF0ZS5OZXh0UmV3YXJkc0VudHJ5GjUKE0NsYWltaW5nSG91c2VzRW50cnkSCwoDa2V5GAEgASgFEg0KBXZhbHVlGAIgASgEOgI4ARpCCgtTdGF0ZXNFbnRyeRILCgNrZXkYASABKAUSIgoFdmFsdWUYAiABKA4yEy5jbGlja2VyLkhvdXNlU3RhdGU6AjgBGkoKEE5leHRSZXdhcmRzRW50cnkSCwoDa2V5GAEgASgFEiUKBXZhbHVlGAIgASgOMhYuY2xpY2tlci5SZXdhcmRWYXJpYW50OgI4ASoiCgtSb29tVmFyaWFudBIICgRVc2VyEAASCQoFUHJvbW8QASpLCg1SZXdhcmRWYXJpYW50EggKBE5vbmUQABIKCgZDaGVlc2UQARIICgRCb25lEAISCAoEVVNEVBADEgcKA1RPThAEEgcKA0dFTRAFKkAKCkhvdXNlU3RhdGUSDAoISW5hY3RpdmUQABILCgdEaWdnaW5nEAESDAoIQ2xhaW1pbmcQAhIJCgVFbXB0eRADMpgFCgNBUEkSLwoCTWUSEi5jbGlja2VyLk1lUmVxdWVzdBoTLmNsaWNrZXIuTWVSZXNwb25zZSIAEkEKCkxvb2t1cFJvb20SGi5jbGlja2VyLkxvb2t1cFJvb21SZXF1ZXN0GhUuY2xpY2tlci5Sb29tUmVzcG9uc2UiABJCCgpQcm9tb1Jvb21zEhouY2xpY2tlci5Qcm9tb1Jvb21zUmVxdWVzdBoWLmNsaWNrZXIuUm9vbXNSZXNwb25zZSIAEmUKFENoZWNrUHJvbW9Sb29tQWNjZXNzEiQuY2xpY2tlci5DaGVja1Byb21vUm9vbUFjY2Vzc1JlcXVlc3QaJS5jbGlja2VyLkNoZWNrUHJvbW9Sb29tQWNjZXNzUmVzcG9uc2UiABJHChBCb29zdEhvdXJJbnZvaWNlEhcuY2xpY2tlci5JbnZvaWNlUmVxdWVzdBoYLmNsaWNrZXIuSW52b2ljZVJlc3BvbnNlIgASRgoPQm9vc3REYXlJbnZvaWNlEhcuY2xpY2tlci5JbnZvaWNlUmVxdWVzdBoYLmNsaWNrZXIuSW52b2ljZVJlc3BvbnNlIgASRwoQQm9vc3RXZWVrSW52b2ljZRIXLmNsaWNrZXIuSW52b2ljZVJlcXVlc3QaGC5jbGlja2VyLkludm9pY2VSZXNwb25zZSIAEkkKDkJ1eVNwb3RJbnZvaWNlEhsuY2xpY2tlci5TcG90SW52b2ljZVJlcXVlc3QaGC5jbGlja2VyLkludm9pY2VSZXNwb25zZSIAEk0KEEJ1eUlzbGFuZEludm9pY2USHS5jbGlja2VyLklzbGFuZEludm9pY2VSZXF1ZXN0GhguY2xpY2tlci5JbnZvaWNlUmVzcG9uc2UiAGIGcHJvdG8z");
+  fileDesc("Cg1jbGlja2VyLnByb3RvEgdjbGlja2VyIgwKClRvcFJlcXVlc3QiLgoLVG9wUmVzcG9uc2USHwoFcm9vbXMYASADKAsyEC5jbGlja2VyLlRvcFJvb20iOwobQ2hlY2tQcm9tb1Jvb21BY2Nlc3NSZXF1ZXN0EhAKCHJlcV9kYXRhGAEgASgJEgoKAmlkGAIgASgDIjIKHENoZWNrUHJvbW9Sb29tQWNjZXNzUmVzcG9uc2USEgoKaGFzX2FjY2VzcxgBIAEoCCI6ChFMb29rdXBSb29tUmVxdWVzdBIOCgRzbHVnGAEgASgJSAASDAoCaWQYAiABKANIAEIHCgVmaWVsZCITChFQcm9tb1Jvb21zUmVxdWVzdCI1Cg1Sb29tc1Jlc3BvbnNlEiQKBXJvb21zGAEgAygLMhUuY2xpY2tlci5Sb29tUmVzcG9uc2UioAEKDFJvb21SZXNwb25zZRIKCgJpZBgBIAEoAxIMCgRuYW1lGAIgASgJEhAKCHVzZXJuYW1lGAMgASgJEg4KBm9ubGluZRgEIAEoAxIlCgd2YXJpYW50GAUgASgOMhQuY2xpY2tlci5Sb29tVmFyaWFudBItCg5jdXN0b21fcmV3YXJkcxgGIAMoCzIVLmNsaWNrZXIuQ3VzdG9tUmV3YXJkIkcKDEN1c3RvbVJld2FyZBInCgd2YXJpYW50GAEgASgOMhYuY2xpY2tlci5SZXdhcmRWYXJpYW50Eg4KBmFtb3VudBgCIAEoASI5ChRJc2xhbmRJbnZvaWNlUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCRIPCgdyb29tX2lkGAIgASgEIkcKElNwb3RJbnZvaWNlUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCRIOCgZhbW91bnQYAiABKAMSDwoHcm9vbV9pZBgDIAEoBCIiCg5JbnZvaWNlUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCSIfCg9JbnZvaWNlUmVzcG9uc2USDAoEbGluaxgBIAEoCSIdCglNZVJlcXVlc3QSEAoIcmVxX2RhdGEYASABKAki1gEKCk1lUmVzcG9uc2USMwoIYmFsYW5jZXMYASADKAsyIS5jbGlja2VyLk1lUmVzcG9uc2UuQmFsYW5jZXNFbnRyeRINCgVsZXZlbBgCIAEoBRIZChFjbGlja3NfcGVyX3NlY29uZBgDIAEoBRIMCgRyZWZzGAQgASgFEhMKC2Jvb3N0X3VudGlsGAUgASgDEhUKDWlzbGFuZF9hY3RpdmUYByABKAgaLwoNQmFsYW5jZXNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAE6AjgBIsABCgdSZXF1ZXN0Eh0KBGpvaW4YASABKAsyDS5jbGlja2VyLkpvaW5IABIfCgVjbGljaxgCIAEoCzIOLmNsaWNrZXIuQ2xpY2tIABIrCgtzZXRDaXR5TmFtZRgDIAEoCzIULmNsaWNrZXIuU2V0Q2l0eU5hbWVIABIhCgZnZXRUb3AYBCABKAsyDy5jbGlja2VyLkdldFRvcEgAEh0KBHBpbmcYBSABKAsyDS5jbGlja2VyLlBpbmdIAEIGCgRkYXRhIk4KBEpvaW4SFQoNdGVsZWdyYW1fZGF0YRgBIAEoCRIPCgdyb29tX2lkGAIgASgDEhMKBnJlZl9pZBgDIAEoA0gAiAEBQgkKB19yZWZfaWQiPQoFQ2xpY2sSCQoBeBgBIAEoBRIJCgF5GAIgASgFEg4KBnBhZ2VfeBgDIAEoARIOCgZwYWdlX3kYBCABKAEiNwoLU2V0Q2l0eU5hbWUSEQoJY2l0eV9uYW1lGAEgASgJEhUKDWNpdHlfdXNlcm5hbWUYAiABKAkiCAoGR2V0VG9wIgYKBFBpbmcikgQKCFJlc3BvbnNlEgoKAmlkGAEgASgEEiEKBnJld2FyZBgCIAEoCzIPLmNsaWNrZXIuUmV3YXJkSAASKwoLY2xhaW1SZXdhcmQYAyABKAsyFC5jbGlja2VyLkNsYWltUmV3YXJkSAASLwoNc3RhcnRDbGFpbWluZxgEIAEoCzIWLmNsaWNrZXIuU3RhcnRDbGFpbWluZ0gAEikKCnVzZXJKb2luZWQYBSABKAsyEy5jbGlja2VyLlVzZXJKb2luZWRIABIqCgtqb2luX2ZhaWxlZBgGIAEoCzITLmNsaWNrZXIuSm9pbkZhaWxlZEgAEiUKCHVzZXJMZWZ0GAcgASgLMhEuY2xpY2tlci5Vc2VyTGVmdEgAEisKC2NpdHlOYW1lU2V0GAggASgLMhQuY2xpY2tlci5DaXR5TmFtZVNldEgAEhsKA3RvcBgJIAEoCzIMLmNsaWNrZXIuVG9wSAASKwoLdG90YWxPbmxpbmUYCiABKAsyFC5jbGlja2VyLlRvdGFsT25saW5lSAASKQoKcm9vbVVwZGF0ZRgLIAEoCzITLmNsaWNrZXIuUm9vbVVwZGF0ZUgAEh0KBGtpY2sYDCABKAsyDS5jbGlja2VyLktpY2tIABIyCg9ib29zdF9hY3RpdmF0ZWQYDSABKAsyFy5jbGlja2VyLkJvb3N0QWN0aXZhdGVkSABCBgoEZGF0YSIwCg5Cb29zdEFjdGl2YXRlZBIPCgd1c2VyX2lkGAEgASgDEg0KBXVudGlsGAIgASgDIhYKBEtpY2sSDgoGcmVhc29uGAEgASgJIqIBCgZSZXdhcmQSDwoHdXNlcl9pZBgBIAEoAxIQCgh1c2VybmFtZRgCIAEoCRIOCgZhbW91bnQYAyABKAMSFAoMdG90YWxfYW1vdW50GAQgASgDEhkKEXRvdGFsX3Jvb21fYW1vdW50GAUgASgDEgkKAXgYBiABKAUSCQoBeRgHIAEoBRIOCgZwYWdlX3gYCCABKAESDgoGcGFnZV95GAkgASgBIosBCgtDbGFpbVJld2FyZBIPCgd1c2VyX2lkGAEgASgDEhAKCHVzZXJuYW1lGAIgASgJEiMKBnJld2FyZBgDIAEoCzITLmNsaWNrZXIuUmV3YXJkVHlwZRIJCgF4GAQgASgFEgkKAXkYBSABKAUSDgoGcGFnZV94GAYgASgBEg4KBnBhZ2VfeRgHIAEoASJcCgpSZXdhcmRUeXBlEg8KB3ZhcmlhbnQYASABKAkSDgoGYW1vdW50GAIgASgBEh8KBnJhcml0eRgDIAEoCzIPLmNsaWNrZXIuUmFyaXR5EgwKBGRlZXAYBCABKAMiIgoGUmFyaXR5EgwKBGZyb20YASABKAMSCgoCdG8YAiABKAMiVgoNU3RhcnRDbGFpbWluZxIPCgd1c2VyX2lkGAEgASgDEhAKCHVzZXJuYW1lGAIgASgJEgkKAXgYAyABKAUSCQoBeRgEIAEoBRIMCgR0aW1lGAUgASgEIloKClVzZXJKb2luZWQSDwoHdXNlcl9pZBgBIAEoAxIQCgh1c2VybmFtZRgCIAEoCRIUCgx0b3RhbF9hbW91bnQYAyABKAMSEwoLYm9vc3RfdW50aWwYBCABKAMirAEKCkpvaW5GYWlsZWQSDwoHdXNlcl9pZBgBIAEoAxIOCgZyZWFzb24YAiABKAkSMAoIaW5hY3RpdmUYAyABKAsyHC5jbGlja2VyLkpvaW5GYWlsZWRfSW5hY3RpdmVIABJAChFtdXN0X2pvaW5fY2hhbm5lbBgEIAEoCzIjLmNsaWNrZXIuSm9pbkZhaWxlZF9NdXN0Sm9pbkNoYW5uZWxIAEIJCgdkZXRhaWxzIi4KE0pvaW5GYWlsZWRfSW5hY3RpdmUSFwoPdXNlcnNfdG9faW52aXRlGAEgASgFIkMKGkpvaW5GYWlsZWRfTXVzdEpvaW5DaGFubmVsEhIKCmNoYW5uZWxfaWQYASABKAMSEQoJam9pbl9saW5rGAIgASgJIkMKCFVzZXJMZWZ0Eg8KB3VzZXJfaWQYASABKAMSEAoIdXNlcm5hbWUYAiABKAkSFAoMdG90YWxfb25saW5lGAMgASgDIjcKC0NpdHlOYW1lU2V0EhEKCWNpdHlfbmFtZRgBIAEoCRIVCg1jaXR5X3VzZXJuYW1lGAIgASgJIjcKA1RvcBIPCgd1c2VyX2lkGAEgASgDEh8KBXJvb21zGAIgAygLMhAuY2xpY2tlci5Ub3BSb29tIlkKB1RvcFJvb20SDwoHcm9vbV9pZBgBIAEoAxIRCglyb29tX25hbWUYAiABKAkSFAoMdG90YWxfYW1vdW50GAMgASgDEhQKDHRvdGFsX29ubGluZRgEIAEoAyIjCgtUb3RhbE9ubGluZRIUCgx0b3RhbF9vbmxpbmUYASABKAMizAMKClJvb21VcGRhdGUSFAoMdG90YWxfb25saW5lGAEgASgDEhkKEXRvdGFsX3Jvb21fYW1vdW50GAIgASgDEhcKD3RvdGFsX2F2YWlsYWJsZRgDIAEoAxJACg9jbGFpbWluZ19ob3VzZXMYBCADKAsyJy5jbGlja2VyLlJvb21VcGRhdGUuQ2xhaW1pbmdIb3VzZXNFbnRyeRIvCgZzdGF0ZXMYBSADKAsyHy5jbGlja2VyLlJvb21VcGRhdGUuU3RhdGVzRW50cnkSOgoMbmV4dF9yZXdhcmRzGAYgAygLMiQuY2xpY2tlci5Sb29tVXBkYXRlLk5leHRSZXdhcmRzRW50cnkaNQoTQ2xhaW1pbmdIb3VzZXNFbnRyeRILCgNrZXkYASABKAUSDQoFdmFsdWUYAiABKAQ6AjgBGkIKC1N0YXRlc0VudHJ5EgsKA2tleRgBIAEoBRIiCgV2YWx1ZRgCIAEoDjITLmNsaWNrZXIuSG91c2VTdGF0ZToCOAEaSgoQTmV4dFJld2FyZHNFbnRyeRILCgNrZXkYASABKAUSJQoFdmFsdWUYAiABKA4yFi5jbGlja2VyLlJld2FyZFZhcmlhbnQ6AjgBKiIKC1Jvb21WYXJpYW50EggKBFVzZXIQABIJCgVQcm9tbxABKksKDVJld2FyZFZhcmlhbnQSCAoETm9uZRAAEgoKBkNoZWVzZRABEggKBEJvbmUQAhIICgRVU0RUEAMSBwoDVE9OEAQSBwoDR0VNEAUqQAoKSG91c2VTdGF0ZRIMCghJbmFjdGl2ZRAAEgsKB0RpZ2dpbmcQARIMCghDbGFpbWluZxACEgkKBUVtcHR5EAMyzAUKA0FQSRIvCgJNZRISLmNsaWNrZXIuTWVSZXF1ZXN0GhMuY2xpY2tlci5NZVJlc3BvbnNlIgASQQoKTG9va3VwUm9vbRIaLmNsaWNrZXIuTG9va3VwUm9vbVJlcXVlc3QaFS5jbGlja2VyLlJvb21SZXNwb25zZSIAEkIKClByb21vUm9vbXMSGi5jbGlja2VyLlByb21vUm9vbXNSZXF1ZXN0GhYuY2xpY2tlci5Sb29tc1Jlc3BvbnNlIgASZQoUQ2hlY2tQcm9tb1Jvb21BY2Nlc3MSJC5jbGlja2VyLkNoZWNrUHJvbW9Sb29tQWNjZXNzUmVxdWVzdBolLmNsaWNrZXIuQ2hlY2tQcm9tb1Jvb21BY2Nlc3NSZXNwb25zZSIAEjIKA1RvcBITLmNsaWNrZXIuVG9wUmVxdWVzdBoULmNsaWNrZXIuVG9wUmVzcG9uc2UiABJHChBCb29zdEhvdXJJbnZvaWNlEhcuY2xpY2tlci5JbnZvaWNlUmVxdWVzdBoYLmNsaWNrZXIuSW52b2ljZVJlc3BvbnNlIgASRgoPQm9vc3REYXlJbnZvaWNlEhcuY2xpY2tlci5JbnZvaWNlUmVxdWVzdBoYLmNsaWNrZXIuSW52b2ljZVJlc3BvbnNlIgASRwoQQm9vc3RXZWVrSW52b2ljZRIXLmNsaWNrZXIuSW52b2ljZVJlcXVlc3QaGC5jbGlja2VyLkludm9pY2VSZXNwb25zZSIAEkkKDkJ1eVNwb3RJbnZvaWNlEhsuY2xpY2tlci5TcG90SW52b2ljZVJlcXVlc3QaGC5jbGlja2VyLkludm9pY2VSZXNwb25zZSIAEk0KEEJ1eUlzbGFuZEludm9pY2USHS5jbGlja2VyLklzbGFuZEludm9pY2VSZXF1ZXN0GhguY2xpY2tlci5JbnZvaWNlUmVzcG9uc2UiAGIGcHJvdG8z");
+
+/**
+ * Describes the message clicker.TopRequest.
+ * Use `create(TopRequestSchema)` to create a new message.
+ */
+export const TopRequestSchema = /*@__PURE__*/
+  messageDesc(file_clicker, 0);
+
+/**
+ * Describes the message clicker.TopResponse.
+ * Use `create(TopResponseSchema)` to create a new message.
+ */
+export const TopResponseSchema = /*@__PURE__*/
+  messageDesc(file_clicker, 1);
 
 /**
  * Describes the message clicker.CheckPromoRoomAccessRequest.
  * Use `create(CheckPromoRoomAccessRequestSchema)` to create a new message.
  */
 export const CheckPromoRoomAccessRequestSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 0);
+  messageDesc(file_clicker, 2);
 
 /**
  * Describes the message clicker.CheckPromoRoomAccessResponse.
  * Use `create(CheckPromoRoomAccessResponseSchema)` to create a new message.
  */
 export const CheckPromoRoomAccessResponseSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 1);
+  messageDesc(file_clicker, 3);
 
 /**
  * Describes the message clicker.LookupRoomRequest.
  * Use `create(LookupRoomRequestSchema)` to create a new message.
  */
 export const LookupRoomRequestSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 2);
+  messageDesc(file_clicker, 4);
 
 /**
  * Describes the message clicker.PromoRoomsRequest.
  * Use `create(PromoRoomsRequestSchema)` to create a new message.
  */
 export const PromoRoomsRequestSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 3);
+  messageDesc(file_clicker, 5);
 
 /**
  * Describes the message clicker.RoomsResponse.
  * Use `create(RoomsResponseSchema)` to create a new message.
  */
 export const RoomsResponseSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 4);
+  messageDesc(file_clicker, 6);
 
 /**
  * Describes the message clicker.RoomResponse.
  * Use `create(RoomResponseSchema)` to create a new message.
  */
 export const RoomResponseSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 5);
+  messageDesc(file_clicker, 7);
 
 /**
  * Describes the message clicker.CustomReward.
  * Use `create(CustomRewardSchema)` to create a new message.
  */
 export const CustomRewardSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 6);
+  messageDesc(file_clicker, 8);
 
 /**
  * Describes the message clicker.IslandInvoiceRequest.
  * Use `create(IslandInvoiceRequestSchema)` to create a new message.
  */
 export const IslandInvoiceRequestSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 7);
+  messageDesc(file_clicker, 9);
 
 /**
  * Describes the message clicker.SpotInvoiceRequest.
  * Use `create(SpotInvoiceRequestSchema)` to create a new message.
  */
 export const SpotInvoiceRequestSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 8);
+  messageDesc(file_clicker, 10);
 
 /**
  * Describes the message clicker.InvoiceRequest.
  * Use `create(InvoiceRequestSchema)` to create a new message.
  */
 export const InvoiceRequestSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 9);
+  messageDesc(file_clicker, 11);
 
 /**
  * Describes the message clicker.InvoiceResponse.
  * Use `create(InvoiceResponseSchema)` to create a new message.
  */
 export const InvoiceResponseSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 10);
+  messageDesc(file_clicker, 12);
 
 /**
  * Describes the message clicker.MeRequest.
  * Use `create(MeRequestSchema)` to create a new message.
  */
 export const MeRequestSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 11);
+  messageDesc(file_clicker, 13);
 
 /**
  * Describes the message clicker.MeResponse.
  * Use `create(MeResponseSchema)` to create a new message.
  */
 export const MeResponseSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 12);
+  messageDesc(file_clicker, 14);
 
 /**
  * Describes the message clicker.Request.
  * Use `create(RequestSchema)` to create a new message.
  */
 export const RequestSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 13);
+  messageDesc(file_clicker, 15);
 
 /**
  * Describes the message clicker.Join.
  * Use `create(JoinSchema)` to create a new message.
  */
 export const JoinSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 14);
+  messageDesc(file_clicker, 16);
 
 /**
  * Describes the message clicker.Click.
  * Use `create(ClickSchema)` to create a new message.
  */
 export const ClickSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 15);
+  messageDesc(file_clicker, 17);
 
 /**
  * Describes the message clicker.SetCityName.
  * Use `create(SetCityNameSchema)` to create a new message.
  */
 export const SetCityNameSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 16);
+  messageDesc(file_clicker, 18);
 
 /**
  * Describes the message clicker.GetTop.
  * Use `create(GetTopSchema)` to create a new message.
  */
 export const GetTopSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 17);
+  messageDesc(file_clicker, 19);
 
 /**
  * Describes the message clicker.Ping.
  * Use `create(PingSchema)` to create a new message.
  */
 export const PingSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 18);
+  messageDesc(file_clicker, 20);
 
 /**
  * Describes the message clicker.Response.
  * Use `create(ResponseSchema)` to create a new message.
  */
 export const ResponseSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 19);
+  messageDesc(file_clicker, 21);
 
 /**
  * Describes the message clicker.BoostActivated.
  * Use `create(BoostActivatedSchema)` to create a new message.
  */
 export const BoostActivatedSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 20);
+  messageDesc(file_clicker, 22);
 
 /**
  * Describes the message clicker.Kick.
  * Use `create(KickSchema)` to create a new message.
  */
 export const KickSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 21);
+  messageDesc(file_clicker, 23);
 
 /**
  * Describes the message clicker.Reward.
  * Use `create(RewardSchema)` to create a new message.
  */
 export const RewardSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 22);
+  messageDesc(file_clicker, 24);
 
 /**
  * Describes the message clicker.ClaimReward.
  * Use `create(ClaimRewardSchema)` to create a new message.
  */
 export const ClaimRewardSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 23);
+  messageDesc(file_clicker, 25);
 
 /**
  * Describes the message clicker.RewardType.
  * Use `create(RewardTypeSchema)` to create a new message.
  */
 export const RewardTypeSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 24);
+  messageDesc(file_clicker, 26);
 
 /**
  * Describes the message clicker.Rarity.
  * Use `create(RaritySchema)` to create a new message.
  */
 export const RaritySchema = /*@__PURE__*/
-  messageDesc(file_clicker, 25);
+  messageDesc(file_clicker, 27);
 
 /**
  * Describes the message clicker.StartClaiming.
  * Use `create(StartClaimingSchema)` to create a new message.
  */
 export const StartClaimingSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 26);
+  messageDesc(file_clicker, 28);
 
 /**
  * Describes the message clicker.UserJoined.
  * Use `create(UserJoinedSchema)` to create a new message.
  */
 export const UserJoinedSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 27);
+  messageDesc(file_clicker, 29);
 
 /**
  * Describes the message clicker.JoinFailed.
  * Use `create(JoinFailedSchema)` to create a new message.
  */
 export const JoinFailedSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 28);
+  messageDesc(file_clicker, 30);
 
 /**
  * Describes the message clicker.JoinFailed_Inactive.
  * Use `create(JoinFailed_InactiveSchema)` to create a new message.
  */
 export const JoinFailed_InactiveSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 29);
+  messageDesc(file_clicker, 31);
 
 /**
  * Describes the message clicker.JoinFailed_MustJoinChannel.
  * Use `create(JoinFailed_MustJoinChannelSchema)` to create a new message.
  */
 export const JoinFailed_MustJoinChannelSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 30);
+  messageDesc(file_clicker, 32);
 
 /**
  * Describes the message clicker.UserLeft.
  * Use `create(UserLeftSchema)` to create a new message.
  */
 export const UserLeftSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 31);
+  messageDesc(file_clicker, 33);
 
 /**
  * Describes the message clicker.CityNameSet.
  * Use `create(CityNameSetSchema)` to create a new message.
  */
 export const CityNameSetSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 32);
+  messageDesc(file_clicker, 34);
 
 /**
  * Describes the message clicker.Top.
  * Use `create(TopSchema)` to create a new message.
  */
 export const TopSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 33);
+  messageDesc(file_clicker, 35);
 
 /**
  * Describes the message clicker.TopRoom.
  * Use `create(TopRoomSchema)` to create a new message.
  */
 export const TopRoomSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 34);
+  messageDesc(file_clicker, 36);
 
 /**
  * Describes the message clicker.TotalOnline.
  * Use `create(TotalOnlineSchema)` to create a new message.
  */
 export const TotalOnlineSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 35);
+  messageDesc(file_clicker, 37);
 
 /**
  * Describes the message clicker.RoomUpdate.
  * Use `create(RoomUpdateSchema)` to create a new message.
  */
 export const RoomUpdateSchema = /*@__PURE__*/
-  messageDesc(file_clicker, 36);
+  messageDesc(file_clicker, 38);
 
 /**
  * Describes the enum clicker.RoomVariant.

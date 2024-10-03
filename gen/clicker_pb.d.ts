@@ -11,6 +11,50 @@ import type { Message } from "@bufbuild/protobuf";
 export declare const file_clicker: GenFile;
 
 /**
+ * @generated from message clicker.TopRequest
+ */
+export declare type TopRequest = Message<"clicker.TopRequest"> & {
+};
+
+/**
+ * JSON type for the message clicker.TopRequest.
+ */
+export declare type TopRequestJson = {
+};
+
+/**
+ * Describes the message clicker.TopRequest.
+ * Use `create(TopRequestSchema)` to create a new message.
+ */
+export declare const TopRequestSchema: GenMessage<TopRequest, TopRequestJson>;
+
+/**
+ * @generated from message clicker.TopResponse
+ */
+export declare type TopResponse = Message<"clicker.TopResponse"> & {
+  /**
+   * @generated from field: repeated clicker.TopRoom rooms = 1;
+   */
+  rooms: TopRoom[];
+};
+
+/**
+ * JSON type for the message clicker.TopResponse.
+ */
+export declare type TopResponseJson = {
+  /**
+   * @generated from field: repeated clicker.TopRoom rooms = 1;
+   */
+  rooms?: TopRoomJson[];
+};
+
+/**
+ * Describes the message clicker.TopResponse.
+ * Use `create(TopResponseSchema)` to create a new message.
+ */
+export declare const TopResponseSchema: GenMessage<TopResponse, TopResponseJson>;
+
+/**
  * @generated from message clicker.CheckPromoRoomAccessRequest
  */
 export declare type CheckPromoRoomAccessRequest = Message<"clicker.CheckPromoRoomAccessRequest"> & {
@@ -1929,6 +1973,14 @@ export declare const API: GenService<{
     methodKind: "unary";
     input: typeof CheckPromoRoomAccessRequestSchema;
     output: typeof CheckPromoRoomAccessResponseSchema;
+  },
+  /**
+   * @generated from rpc clicker.API.Top
+   */
+  top: {
+    methodKind: "unary";
+    input: typeof TopRequestSchema;
+    output: typeof TopResponseSchema;
   },
   /**
    * @generated from rpc clicker.API.BoostHourInvoice
