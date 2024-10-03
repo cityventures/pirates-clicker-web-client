@@ -33,7 +33,12 @@ export declare const TopRequestSchema: GenMessage<TopRequest, TopRequestJson>;
  */
 export declare type TopResponse = Message<"clicker.TopResponse"> & {
   /**
-   * @generated from field: repeated clicker.TopRoom rooms = 1;
+   * @generated from field: int64 online = 1;
+   */
+  online: bigint;
+
+  /**
+   * @generated from field: repeated clicker.TopRoom rooms = 2;
    */
   rooms: TopRoom[];
 };
@@ -43,7 +48,12 @@ export declare type TopResponse = Message<"clicker.TopResponse"> & {
  */
 export declare type TopResponseJson = {
   /**
-   * @generated from field: repeated clicker.TopRoom rooms = 1;
+   * @generated from field: int64 online = 1;
+   */
+  online?: string;
+
+  /**
+   * @generated from field: repeated clicker.TopRoom rooms = 2;
    */
   rooms?: TopRoomJson[];
 };
